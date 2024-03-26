@@ -1,0 +1,24 @@
+@import url('/assets/css/global.css');
+@import url('/assets/css/resetcss.css');
+
+body {
+    background-color: var(--primary-color);
+}
+
+.z-menu {
+    padding: 1rem 0;
+    width: 100%;
+    text-align: center;
+}
+
+.z-menu__item {
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 0 1.25rem;
+}
+
+.z-menu__icon {
+    width: 8rem;
+    margin: 0 1.25rem;
+    vertical-align: middle;
+}
