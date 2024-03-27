@@ -35,3 +35,42 @@ body::before {
     margin: 0 1.25rem;
     vertical-align: middle;
 }
+
+.z-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.z-card {
+    border: 0.5rem solid white;
+    width: calc(100%/ 3 - 8%);
+    height: 70vh;
+    position: relative;
+}
+
+.z-card__background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0.9;
+}
+
+.z-card__img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: relative;
+}
+
+.z-card__tittle {
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
