@@ -74,3 +74,34 @@ body::before {
     width: 100%;
     bottom: 0;
 }
+
+.z-controller {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.z-controller__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.z-controller__line {
+    background-color: white;
+    width: 50%;
+    height: 2px;
+    position: absolute;
+}
