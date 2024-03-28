@@ -1,5 +1,5 @@
-@import url('./assets/css/global.css');
-@import url('./assets/css/resetcss.css');
+@import url('/assets/css/global.css');
+@import url('/assets/css/resetcss.css');
 
 body {
     background-color: var(--primary-color);
@@ -7,7 +7,7 @@ body {
 
 body::before {
     content: "";
-    background-image: url('./assets/images/background-home.jpg');
+    background-image: url('/assets/images/background-home.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -138,15 +138,15 @@ body::before {
 }
 
 body#link-01-hovered::before {
-    background-image: url('./assets/images/background-01.jpg');
+    background-image: url('/assets/images/background-01.jpg');
 }
 
 body#link-02-hovered::before {
-    background-image: url('./assets/images/background-02.jpg');
+    background-image: url('/assets/images/background-02.jpg');
 }
 
 body#link-03-hovered::before {
-    background-image: url('./assets/images/background-03.jpg');
+    background-image: url('/assets/images/background-03.jpg');
 }
 
 body[id^="link-"]::before {

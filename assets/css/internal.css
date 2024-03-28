@@ -1,4 +1,4 @@
-@import url('./resetcss.css');
+@import url('resetcss.css');
 
 .z-wrapper {
     display: flex;
