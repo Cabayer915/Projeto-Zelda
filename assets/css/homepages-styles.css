@@ -15,6 +15,7 @@ body::before {
     height: 100%;
     position: absolute;
     opacity: 0.2;
+    transition: background-image 1s ease-in-out, opacity 1s ease-in-out;
 }
 
 .z-menu {
@@ -49,6 +50,7 @@ body::before {
     width: calc(100%/ 3 - 8%);
     height: 70vh;
     position: relative;
+    transition: filter 0.5s ease-in-out;
 }
 
 .z-card__background {
@@ -79,6 +81,8 @@ body::before {
     position: absolute;
     width: 100%;
     bottom: 0;
+    text-shadow: 2px 2px 4px #000000;
+    transition: bottom 1s ease-in-out;
 }
 
 .z-controller {
@@ -130,4 +134,29 @@ body::before {
 
 .z-card--hovered .z-card__img {
     transform: scale(1.2) translate(-50%, -50%);
+    filter: drop-shadow(30px 10px 4px rgba(0, 0, 0, .5));
+}
+
+body#link-01-hovered::before {
+    background-image: url('/assets/images/background-01.jpg');
+}
+
+body#link-02-hovered::before {
+    background-image: url('/assets/images/background-02.jpg');
+}
+
+body#link-03-hovered::before {
+    background-image: url('/assets/images/background-03.jpg');
+}
+
+body[id^="link-"]::before {
+    opacity: 1;
+}
+
+body[id^="link-"] .z-card:not(.z-card--hovered) {
+    filter: grayscale(100%);
+}
+
+.z-card--hovered .z-card__tittle {
+    bottom: 50%;
 }

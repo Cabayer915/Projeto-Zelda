@@ -1,9 +1,11 @@
 function handleMouseEnter() {
     this.classList.add('z-card--hovered');
+    document.body.id = `${this.id}-hovered`;
 }
 
 function handleMouseLeave() {
     this.classList.remove('z-card--hovered');
+    document.body.id = '';
 }
 
 function addEventListenersToCards() {
