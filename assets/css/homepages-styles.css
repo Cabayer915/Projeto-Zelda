@@ -58,13 +58,18 @@ body::before {
     position: absolute;
     opacity: 1;
     filter: brightness(50%);
+    transition: opacity 1s ease-in-out;
 }
 
 .z-card__img {
     width: 100%;
-    height: 100%;
+    height: 80%;
     object-fit: contain;
     position: relative;
+    transition: 1s ease-in-out;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .z-card__tittle {
@@ -114,4 +119,15 @@ body::before {
     width: 50%;
     height: 2px;
     position: absolute;
+}
+
+/* Hover Animação */
+
+.z-card--hovered .z-card__background {
+    cursor: pointer;
+    opacity: 0;
+}
+
+.z-card--hovered .z-card__img {
+    transform: scale(1.2) translate(-50%, -50%);
 }
