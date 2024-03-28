@@ -10,10 +10,14 @@
 .z-wrapper .z-left-column {
     width: 100px;
     height: 100%;
-    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    padding-right: 50px;
+    left: 0;
+    top: 0;
+    z-index: 1;
 }
 
 .z-wrapper .z-content-main {
@@ -22,6 +26,22 @@
     background-color: gray;
     padding-left: 30px;
 }
+
+.z-content-main__top {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.z-content-main__bottom {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.z-wrapper .z-content-main {}
 
 .navigator {
     height: 80vh;
