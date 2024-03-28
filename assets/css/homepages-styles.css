@@ -56,7 +56,8 @@ body::before {
     height: 100%;
     object-fit: cover;
     position: absolute;
-    opacity: 0.9;
+    opacity: 1;
+    filter: brightness(50%);
 }
 
 .z-card__img {
@@ -97,6 +98,15 @@ body::before {
     font-weight: bold;
     cursor: pointer;
     z-index: 1;
+    transition: transform 0.3s ease-in-out;
+}
+
+.z-controller__button:hover {
+    transform: scale(1.1);
+}
+
+.z-controller__button:nth-child(2) {
+    margin: 0 3.75rem;
 }
 
 .z-controller__line {
