@@ -1,6 +1,8 @@
 @import url('resetcss.css');
 @import url('global.css');
 @import url('/assets/css/components/pills.css');
+@import url('/assets/css/components/link-button.css');
+@import url('/assets/css/components/gallery.css');
 
 .z-wrapper {
     display: flex;
@@ -24,8 +26,9 @@
 .z-wrapper .z-content-main {
     height: 100%;
     width: 100%;
-    background-color: gray;
     padding-left: 130px;
+    background-image: url('../images/zelda-ocarina-young-background.jpg');
+    background-size: cover;
 }
 
 .z-content-main__top {
@@ -127,4 +130,9 @@
 
 .z-wrapper .z-content-main__top .z-desc .pills {
     margin-bottom: 20px;
+}
+
+.z-wrapper .z-content-main .z-links{
+    padding: 20px;
+    padding-left: 0;
 }
