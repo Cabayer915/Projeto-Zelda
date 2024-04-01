@@ -190,3 +190,9 @@ body[id^="link-"] .z-card:not(.z-card--hovered) {
     transform-style: preserve-3d;
     transition: transform 0.4s ease-in;
 }
+
+@media (max-width: 1400px) {
+    .z-card {
+        height: 58vh;
+    }
+}
