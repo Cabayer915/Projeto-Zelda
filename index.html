@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./assets/images/icons/iconpage.png">
     <link rel="stylesheet" href="./assets/css/homepages-styles.css">
-    <script src="./assets/scripts/card-hover-animation.js"></script>
+    <script src="./assets/scripts/script.js"></script>
     <title>The Legend of Zelda</title>
 </head>
 <body>
@@ -15,7 +15,7 @@
                 <a href="#">Página Inicial</a>
             </li>
             <li class="z-menu__item">
-                <a href="#">Link Criança</a>
+                <a href="/pages/link criança/linkYoung1.html">Link Criança</a>
             </li>
             <li class="z-menu__item z-menu__icon">
                 <img src="./assets/images/icons/icon-01.svg" alt="">
@@ -30,31 +30,33 @@
     </nav>
     <!-- <h2 onclick="fecharCarrossel()">ocultar links</h2> -->
     <div class="z-container">
-        <a href="#" class="z-card" id="link-01">
-            <img class="z-card__background" src="./assets/images/background-01.jpg" alt="">
-            <img class="z-card__img" src="./assets/images/link-01.png" alt="">
-            <h2 class="z-card__tittle">link criança</h2>
-        </a>
-        <a href="#" class="z-card" id="link-02">
-            <img class="z-card__background" src="./assets/images/background-02.jpg" alt="">
-            <img class="z-card__img" src="./assets/images/link-02.png" alt="">
-            <h2 class="z-card__tittle">link adulto</h2>
-        </a>
-        <a href="#" class="z-card" id="link-03">
-            <img class="z-card__background" src="./assets/images/background-03.jpg" alt="">
-            <img class="z-card__img" src="./assets/images/link-03.png" alt="">
-            <h2 class="z-card__tittle">dark link</h2>
-        </a>
+        <div class="z-card-carousel" style="transform: translateZ(-40vw) rotateY(0deg);">
+            <a href="#" class="z-card" id="link-01">
+                <img class="z-card__background" src="./assets/images/background-01.jpg" alt="">
+                <img class="z-card__img" src="./assets/images/link-01.png" alt="">
+                <h2 class="z-card__tittle">link criança</h2>
+            </a>
+            <a href="#" class="z-card" id="link-02">
+                <img class="z-card__background" src="./assets/images/background-02.jpg" alt="">
+                <img class="z-card__img" src="./assets/images/link-02.png" alt="">
+                <h2 class="z-card__tittle">link adulto</h2>
+            </a>
+            <a href="#" class="z-card" id="link-03">
+                <img class="z-card__background" src="./assets/images/background-03.jpg" alt="">
+                <img class="z-card__img" src="./assets/images/link-03.png" alt="">
+                <h2 class="z-card__tittle">dark link</h2>
+            </a>
+        </div>
     </div>
 
     <div class="z-controller">
-        <div class="z-controller__button">
+        <div id="1" onclick="selectCarouselItem(this)" class="z-controller__button">
             01
         </div>
-        <div class="z-controller__button">
+        <div id="2" onclick="selectCarouselItem(this)" class="z-controller__button">
             02
         </div>
-        <div class="z-controller__button">
+        <div id="3" onclick="selectCarouselItem(this)" class="z-controller__button">
             03
         </div>
         <div class="z-controller__line"></div>
