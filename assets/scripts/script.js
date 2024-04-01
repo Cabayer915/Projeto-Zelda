@@ -21,5 +21,16 @@ function addEventListenersToCards() {
 document.addEventListener("DOMContentLoaded", addEventListenersToCards, false);
 
 function selectCarouselItem(selectedItem) {
-    console.log('Selecionando item', selectedItem);
+    const selectedItemId = selectedItem.id;
+    const carousel = document.querySelector('.z-card-carousel')
+    const transform = carousel.style.transform;
+    const rotateY = transform.match(/rotateY\((-?\d+deg)\)/i);
+    const rotateYDeg = -120 * (Number(selectedItemId) - 1);
+    const newTransform = transform.replace(rotateY[0], `rotateY(${rotateYDeg}deg)`);
+  
+    carousel.style.transform = newTransform;
+
+    const activeButtonElement = document.querySelector('.z-controller__button--active');
+    activeButtonElement.classList.remove('z-controller__button--active');
+    selectedItem.classList.add('z-controller__button--active');
 }
