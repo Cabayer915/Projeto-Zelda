@@ -191,8 +191,92 @@ body[id^="link-"] .z-card:not(.z-card--hovered) {
     transition: transform 0.4s ease-in;
 }
 
-@media (max-width: 1400px) {
+/* Responsividade para notebooks */
+@media (max-width: 1550px) {
     .z-card {
-        height: 58vh;
+        height: 64vh;
+    }
+}
+
+/* Responsividade para tablets */
+@media (max-width: 1024px) {
+    .z-menu__item {
+        margin: 0 0.75rem;
+    }
+
+    .z-menu__icon {
+        width: 5rem;
+        margin: 0 0.75rem;
+    }
+
+    .z-card {
+        height: 50vh;
+    }
+
+    .z-card__tittle {
+        font-size: 1.5rem;
+    }
+
+    .z-controller__button {
+        width: 2rem;
+        height: 2rem;
+        font-size: 0.875rem;
+    }
+
+    .z-controller__button:nth-child(2) {
+        margin: 0 2.5rem;
+    }
+}
+
+/* Responsividade para telas menores (celulares) */
+@media (max-width: 768px) {
+    .z-menu__item {
+        margin: 0 0.5rem;
+        font-size: 0.875rem;
+    }
+
+    .z-menu__icon {
+        width: 4rem;
+        margin: 0 0.5rem;
+    }
+
+    .z-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .z-card {
+        height: 40vh;
+    }
+
+    .z-card:nth-child(1) {
+        transform: rotateY(0deg) translateZ(35vw);
+    }
+
+    .z-card:nth-child(2) {
+        transform: rotateY(120deg) translateZ(35vw);
+    }
+
+    .z-card:nth-child(3) {
+        transform: rotateY(240deg) translateZ(35vw);
+    }
+
+    .z-card__tittle {
+        font-size: 1.25rem;
+    }
+
+    .z-controller__button {
+        width: 1.75rem;
+        height: 1.75rem;
+        font-size: 0.75rem;
+    }
+
+    .z-controller__button:nth-child(2) {
+        margin: 0 1.5rem;
+    }
+
+    .z-controller__line {
+        width: 70%;
     }
 }
