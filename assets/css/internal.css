@@ -58,6 +58,15 @@
     background-position: center;
 }
 
+.z-wrapper .z-content-main.link-to-the-past {
+    height: 100vh;
+    width: 100%;
+    padding-left: 130px;
+    background-image: url('../images/zelda-a-link-to-the-past-background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
 .z-content-main__top {
     display: flex;
     flex-direction: column;
@@ -155,6 +164,10 @@
     padding: 20px 0;
 }
 
+.label {
+    text-shadow: 4px 4px 6px #000000;
+}
+
 /* Responsividade */
 
 @media (max-width: 1550px) {
@@ -171,6 +184,10 @@
     }
 
     .z-wrapper .z-content-main.four-swords {
+        height: 100%;
+    }
+
+    .z-wrapper .z-content-main.link-to-the-past {
         height: 100%;
     }
 }
