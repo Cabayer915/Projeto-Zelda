@@ -103,6 +103,15 @@
     background-position: center;
 }
 
+.z-wrapper .z-content-main.the-legend-of-zelda {
+    height: 100vh;
+    width: 100%;
+    padding-left: 130px;
+    background-image: url('../images/the-legend-of-zelda-background.png');
+    background-size: cover;
+    background-position: center;
+}
+
 .z-content-main__top {
     display: flex;
     flex-direction: column;
@@ -236,6 +245,14 @@
     }
     
     .z-wrapper .z-content-main.between-worlds {
+        height: 100%;
+    }
+
+    .z-wrapper .z-content-main.triforce-heroes {
+        height: 100%;
+    }
+    
+    .z-wrapper .z-content-main.the-legend-of-zelda {
         height: 100%;
     }
 }
